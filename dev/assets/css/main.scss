@@ -1,0 +1,123 @@
+@import './_common/_reset';
+body {
+    color: #fff;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+a {
+    display: block;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    &.bold {
+        font-weight: bold;
+        color: #f78e17;
+    }
+}
+
+.codepen {
+    width: 100%;
+}
+
+table {
+    border: solid 1px#fff;
+    padding: 2%;
+    width: 80%;
+    th {
+        padding: 2%;
+    }
+}
+
+//layout
+.animejs-lt {
+    overflow: hidden;
+    .slide-count {
+        color: #fff;
+        position: absolute;
+        bottom: 2%;
+        right: 0;
+        left: 0;
+        margin: auto;
+        z-index: 100;
+        cursor: pointer;
+        ul {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            li {
+                margin-right: 1%;
+                &.current {
+                    color: #ff0000;
+                }
+            }
+        }
+    }
+}
+
+.animejs-lt__inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    .slide {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000000;
+        box-sizing: border-box;
+    }
+    .slide-inner {
+        &.inner--flex {
+            display: flex;
+            justify-content: center;
+        }
+        &.inner--max-w {
+            width: 85%;
+        }
+    }
+    .slide1 {}
+    .slide2 {
+        img {
+            width: 90%;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        ul {
+            padding-left: 1.5em;
+            li {
+                list-style-type: disc;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .slide3 {
+        ul {
+            padding-left: 1.5em;
+            li {
+                list-style-type: disc;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .slide5 {
+        img {
+            width: 45%;
+            margin-bottom: 20px;
+        }
+    }
+}
+
