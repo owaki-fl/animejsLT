@@ -89,7 +89,6 @@ table {
             width: 85%;
         }
     }
-    .slide1 {}
     .slide2 {
         img {
             width: 90%;
@@ -119,5 +118,26 @@ table {
             margin-bottom: 20px;
         }
     }
+    .slide8 {
+        ul {
+            padding-left: 1.5em;
+            margin-bottom: 20px;
+            li {
+                font-size: 20px;
+                list-style-type: disc;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .slide10 {
+        ul {
+            padding-left: 1.5em;
+            margin-bottom: 20px;
+            li {
+                font-size: 24px;
+                list-style-type: disc;
+                margin-bottom: 10px;
+            }
+        }
+    }
 }
-
