@@ -1,7 +1,7 @@
 const baseConfig = {
   tmp: '.tmp',
   dev: 'dev',
-  build: 'build',
+  build: 'dist',
   assets: 'dev/assets'
 }
 
