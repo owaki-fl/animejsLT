@@ -3,24 +3,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name=”robots” content=”noindex” />
     <link rel="stylesheet" href="./css/main.css">
     <script type="text/javascript" src="./js/main.js"></script>
     <title>animejsLT</title>
 </head>
 <body>
+    <div class="cover-anim"></div>
+    <div class="cover-bg"></div>
     <main class="animejs-lt">
         <div class="animejs-lt__inner">
             <section class="slide slide1">
-                <h1>anime.jsについて</h1>
+                <h1><div class="text-wrapper">anime.jsについて</div></h1>
                 <p class="first-anime">
                 </p>
             </section>
             <section class="slide slide2">
-                <div class="slide-inner inner--flex inner--max-w ">
+                <div class="slide-inner inner--flex inner--max-w">
                     <div>
                         <h2>anime.jsとは</h2>
                         <p>軽量さと記述のとっつきやすさがウリのJavaScriptアニメーションライブラリ。</p>
-                        <a href="http://animejs.com/">http://animejs.com/</a>
+                        <a href="http://animejs.com/" target="_blank">http://animejs.com/</a>
                         <h2>対応ブラウザ</h2>
                         <ul>
                             <li>Chrome / 24+</li>
@@ -65,19 +68,25 @@
             </section>
             <section class="slide slide6">
             <div class="slide-inner inner--max-w">
+                <p>targetsは変数にもできるので同じようなアニメーションの使い回しも楽チン</p>
+                <iframe height='265' scrolling='no' title='animeLT5' src='//codepen.io/owaki/embed/KQZOEZ/?height=265&theme-id=0&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/owaki/pen/KQZOEZ/'>animeLT5</a> by owaki (<a href='https://codepen.io/owaki'>@owaki</a>) on <a href='https://codepen.io'>CodePen</a>.</iframe>
+            </div>
+            </section>
+            <section class="slide slide7">
+            <div class="slide-inner inner--max-w">
             <h2>その他の使い方例1</h2>
                 <p>順々にアニメーションを実行（キーフレーム）</p>
                 <iframe height='350' scrolling='no' title='animeLT2' src='//codepen.io/owaki/embed/VQyydw/?height=265&theme-id=0&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/owaki/pen/VQyydw/'>animeLT2</a> by owaki (<a href='https://codepen.io/owaki'>@owaki</a>) on <a href='https://codepen.io'>CodePen</a>.</iframe>
             </div>
             </section>
-            <section class="slide slide7">
+            <section class="slide slide8">
                 <div class="slide-inner inner--max-w">
                     <h2>その他の使い方例2</h2>
                     <p>複数の要素にアニメーションを実行（タイムライン）</p>
                     <iframe height='350' scrolling='no' title='animeLT3' src='//codepen.io/owaki/embed/papQWj/?height=265&theme-id=0&default-tab=js,result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/owaki/pen/papQWj/'>animeLT3</a> by owaki (<a href='https://codepen.io/owaki'>@owaki</a>) on <a href='https://codepen.io'>CodePen</a>.</iframe>
                 </div>
             </section>
-            <section class="slide slide8">
+            <section class="slide slide9">
                 <div class="slide-inner">
                     <h2>まとめ</h2>
                     <ul>
@@ -86,34 +95,35 @@
                     </ul>
                 </div>
             </section>
-            <section class="slide slide9">
+            <section class="slide slide10">
               <div class="slide-inner">
                 <h2>以上です、ありがとうございました。</h2>
                 <p>anime.jsは他にも色々なことができます。<br>こんなことはできるの？？と気になる方は公式ドキュメントをみてみてくださいませ！</p>
-                <a href="http://animejs.com/">anime.js</a>
-                <a href="http://tr.you84815.space/animejs/">anime.jsドキュメント翻訳 | anime.js - にほんご。</a>
+                <a href="http://animejs.com/" target="_blank">anime.js</a>
+                <a href="http://tr.you84815.space/animejs/" target="_blank">anime.jsドキュメント翻訳 | anime.js - にほんご。</a>
               </div>
             </section>
-            <section class="slide slide10">
+            <section class="slide slide11">
               <div class="slide-inner">
                 <h2>おまけ</h2>
                 <p>今回はnetlifyを使って公開してみました。</p>
                 <img src="/images/netlify.jpg" alt="">
-                <a href="https://www.netlify.com/">https://www.netlify.com/</a>
+                <a href="https://www.netlify.com/" target="_blank">https://www.netlify.com/</a>
                 <ul>
-                  <li>5クリックくらいでとってもスピーディに公開できた。</li>
+                  <li>とってもスピーディに公開できた。</li>
                   <li>指定したブランチに変更があれば自動でビルドタスクが実行され更新してくれる</li>
                   <li>今回のようにちょっと公開して確認したり、見せたいというときはとっても便利かもしれない。</li>
                   <li>もうちょっと調べたら仕事でも使えるかな、、、？</li>
                 </ul>
                 <p>公開までの流れは割愛させていただきますので以下ご参考までに。</p>
-                <a href="http://dojineko.hateblo.jp/entry/2017/09/17/205259">http://dojineko.hateblo.jp/entry/2017/09/17/205259</a>
+                <a href="http://dojineko.hateblo.jp/entry/2017/09/17/205259" target="_blank">http://dojineko.hateblo.jp/entry/2017/09/17/205259</a>
               </div>
             </section>
         </div>
         <div class="slide-count">
             <ul>
                 <li class="current">●</li>
+                <li>●</li>
                 <li>●</li>
                 <li>●</li>
                 <li>●</li>

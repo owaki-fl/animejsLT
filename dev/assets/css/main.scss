@@ -1,10 +1,28 @@
 @import './_common/_reset';
 body {
     color: #fff;
+    overflow: hidden;
 }
 
 h1 {
     font-size: 40px;
+    position: relative;
+    font-weight: 900;
+    font-size: 3.3em;
+    // opacity: 0;
+    .text-wrapper {
+      position: relative;
+      display: inline-block;
+      padding-top: 0.2em;
+      padding-right: 0.05em;
+      padding-bottom: 0.1em;
+      overflow: hidden;
+    }
+    .letter {
+      display: inline-block;
+      line-height: 1em;
+      opacity: 0;
+    }
 }
 
 h2 {
@@ -27,10 +45,6 @@ p {
     }
 }
 
-.codepen {
-    width: 100%;
-}
-
 table {
     border: solid 1px#fff;
     padding: 2%;
@@ -39,6 +53,24 @@ table {
         padding: 2%;
     }
 }
+
+// .cover-bg {
+//     width: 100%;
+//     height: 100%;
+//     position: absolute;
+//     top: 0;
+//     background: #000;
+//     z-index: 100;
+// }
+// .cover-anim {
+//     position: absolute;
+//     background-color: #fff;
+//     z-index: 101;
+//     top: -100%;
+//     left: -50%;
+//     border-radius: 50%;
+// }
+
 
 //layout
 .animejs-lt {
@@ -88,28 +120,19 @@ table {
         &.inner--max-w {
             width: 85%;
         }
+        ul {
+            padding-left: 1.5em;
+            li {
+                list-style-type: disc;
+                margin-bottom: 10px;
+            }
+        }
     }
     .slide2 {
         img {
             width: 90%;
             margin-top: 10px;
             margin-left: 10px;
-        }
-        ul {
-            padding-left: 1.5em;
-            li {
-                list-style-type: disc;
-                margin-bottom: 10px;
-            }
-        }
-    }
-    .slide3 {
-        ul {
-            padding-left: 1.5em;
-            li {
-                list-style-type: disc;
-                margin-bottom: 10px;
-            }
         }
     }
     .slide5 {
@@ -118,25 +141,19 @@ table {
             margin-bottom: 20px;
         }
     }
-    .slide8 {
+    .slide9 {
         ul {
-            padding-left: 1.5em;
             margin-bottom: 20px;
             li {
                 font-size: 20px;
-                list-style-type: disc;
-                margin-bottom: 10px;
             }
         }
     }
-    .slide10 {
+    .slide11 {
         ul {
-            padding-left: 1.5em;
             margin-bottom: 20px;
             li {
                 font-size: 24px;
-                list-style-type: disc;
-                margin-bottom: 10px;
             }
         }
     }

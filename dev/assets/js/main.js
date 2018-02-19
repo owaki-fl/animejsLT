@@ -1,6 +1,6 @@
 'use strict'
 import anime from 'animejs'
-;(function () {
+(function () {
   $(function () {
     var w = $(window).outerWidth()
     var l = $('.slide').length
@@ -39,12 +39,57 @@ import anime from 'animejs'
       })
     }
 
+    // var TtlAnimation = function(){
+    //   $('h1 .text-wrapper').each(function(){
+    //     $(this).html($(this).text().replace(/(\S)/g, '<span class="letter">$1</span>'));
+    //   });
+    //   anime.timeline({
+    //     complete: function(){
+    //     }
+    //   })
+    //   .add({
+    //     targets: 'h1',
+    //     opacity: 1,
+    //     delay:100
+    //   })
+    //   .add({
+    //     targets: 'h1 .letter',
+    //     translateY: ["1.1em", 0],
+    //     translateZ: 0,
+    //     opacity:1,
+    //     duration: 1000,
+    //     delay: function(el, i) {
+    //       return 100 * i;
+    //     }
+    //   });
+    // }
+    //
+    // var cover = function(){
+    //   anime({
+    //     targets: '.cover-anim',
+    //     width: [{value:'200vw',duration:800,easing:'easeOutQuad'},{value:'200%'}],
+    //     height: [{value:'200vw',duration:1500,easing:'easeOutQuad'},{value:'100%',duration:1000}],
+    //     borderRadius:[{value:0,delay:900}],
+    //     complete:function(){
+    //       TtlAnimation();
+    //     }
+    //   })
+    //   anime({
+    //     targets: '.cover-bg',
+    //     translateY: '-100%',
+    //     delay:900
+    //   })
+    // }
+
+
+
     var init = function () {
       $block.each(function (i) {
         $(this).css('left', w * i)
       })
       pager()
       resize()
+      // cover();
     }
     init()
   })
